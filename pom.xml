@@ -43,7 +43,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--nacos的管理依赖-->
+            <!--nacos-->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
@@ -51,7 +51,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- mysql驱动 -->
+            <!-- mysql driver -->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
