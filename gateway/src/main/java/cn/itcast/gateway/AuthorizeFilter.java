@@ -27,7 +27,7 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
         }
         // 5.否，拦截
         // 5.1.设置状态码
-        exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
+        exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);//状态码401
         // 5.2.拦截请求
         return exchange.getResponse().setComplete();
     }
@@ -36,4 +36,5 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
     public int getOrder() {
         return -1;
     }
+    //和上面@Order(-1)作用相同, 值越小, 优先值越高
 }
