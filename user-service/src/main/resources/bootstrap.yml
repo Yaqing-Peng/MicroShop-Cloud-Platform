@@ -5,6 +5,6 @@ spring:
     active: dev # environment
   cloud:
     nacos:
-      server-addr: localhost:8848 # nacos addr
+      server-addr: nacos:8848 # nacos addr
       config:
         file-extension: yaml # file format
